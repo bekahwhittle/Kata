@@ -1,4 +1,5 @@
-var fifthHarmony = ("Lauren Cabello, Dinah Jane, Ally Jane, Camila Cabello, Normani Jane")
+var fifthHarmony = ("Lauren Cabello, Dinah Jane, Ally Jane, Camila Cabello, Normani Kordei")
+var west = ("george washington, kanye west, adam west, tamika washington");
 
 function names (str) {
   var eachName = str.split(', ');
@@ -17,5 +18,5 @@ function names (str) {
   });
   return result;
 }
-console.log(names(fifthHarmony));
+console.log(names(west));
 // names("george washington, adam west, kanye west")
