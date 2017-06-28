@@ -22,7 +22,18 @@ function fizzBuzz(num) {
   }
 
 }
+
 fizzBuzz(35);
 fizzBuzz(21);
 fizzBuzz(99);
 fizzBuzz(12);
+
+// After you have written the above function, write a loop that will console.log
+// the result of every number 1 - 100 being given to your fizzbuzz function.
+
+for (var i = 1; i <= 100; i++) {
+  fizzBuzz(i);
+}
+
+// Instead of writing a loop to go through every number, write a recursive
+// function that will call itself 100 times to go through all numbers 1 - 100
