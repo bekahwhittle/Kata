@@ -2,7 +2,6 @@
 // returns its multiplicative persistence, which is the number of times you must
 // multiply the digits in num until you reach a single digit.
 
-var count = 0;
 
 function persistence(num) {
   function multiply (int) {
@@ -10,6 +9,8 @@ function persistence(num) {
         return a * b;
       });
   }
+  var count = 0;
+
   while(num.toString().length > 1) {
     num = num.toString().split("");
     num = multiply(num);
