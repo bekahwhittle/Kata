@@ -20,7 +20,7 @@ _july 07_
 
 ### want to's...
 
-- [ ]coin changer with ease
+- [ ] coin changer with ease
 - [ ] fizzbuzz memorized
 - [ ] ajax calls
 - [ ] css floats
