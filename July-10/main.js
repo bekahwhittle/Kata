@@ -28,18 +28,7 @@ console.log(persistence(39));
 console.log(persistence(4));
 console.log(persistence(999));
 
+var thirtyN = 400000.35;
 
-function times (a, b) {
-  return a * b;
-}
-
-
-function reduced (int) {
-  return int.reduce(times(3,9));
-}
-
-console.log(reduced(39));
-
-console.log(times(3,9)); // gives us 27
-console.log(times(2,7)); // gives us 14
-console.log(times(1,4)); // gives us 4 - persistence(39) == 4
+console.log(thirtyN);
+console.log(thirtyN.toString().split("")); // [ "4", "0", "0", "0", "0", "0", ".", "3", "5"]
