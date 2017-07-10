@@ -11,7 +11,14 @@
 
 function changer(num) {
   var arr = [];
-  var newArr = arr.push(num);
+  var pennies = [1];
+
+  if (num < 5) {
+    var newArr = arr.push(pennies);
+
+  }
+
+
   console.log(arr);
 };
-changer(2);
+changer(3);
