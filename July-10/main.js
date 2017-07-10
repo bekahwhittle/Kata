@@ -8,11 +8,9 @@ var count = 0;
 function persistence(num) {
 
   function multiply (int) {
-    return int.reduce(
-      function (a, b) {
+    return int.reduce(function (a, b) {
         return a * b;
-      }
-    );
+      });
   }
 
   while(num.toString().length > 1) {
@@ -34,6 +32,14 @@ console.log(persistence(999));
 function times (a, b) {
   return a * b;
 }
+
+
+function reduced (int) {
+  return int.reduce(times(3,9));
+}
+
+console.log(reduced(39));
+
 console.log(times(3,9)); // gives us 27
 console.log(times(2,7)); // gives us 14
 console.log(times(1,4)); // gives us 4 - persistence(39) == 4
