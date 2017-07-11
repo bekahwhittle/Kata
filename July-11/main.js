@@ -17,16 +17,26 @@ console.log("hi");
 
 //
 function likes (array) {
-  if (array.length === 1) {
+  if (array.length === 0) {
+    console.log("Sadly no one has liked this!");
+  } else if (array.length === 1) {
     console.log(array + " likes this");
   } else if (array.length === 2) {
     var names = array.toString().split(",");
     console.log(names[0] + " and " + names[1] + " likes this");
+  } else if (array.length === 3) {
+    var people = array.toString().split(",");
+    console.log(people[0] + ", " + people[1] + " and " + people[2] + " like this");
+  } else {
+    var likers = array.toString().split(",");
+    var num = likers.length - 2;
+    console.log(likers[0] + ", " + likers[1] + " and " + num + " others");
   }
   // console.log(array.toString() + " like this");
   // console.log(array.length);
 }
+likes([]);
 likes(["Peter"]);
 likes(["James", "Casey"]);
-// likes(["Devon", "Lisa", "Piggly"]);
-// likes(["Deeksha", "Lorde", "Diana", "Spiderman"]);
+likes(["Devon", "Lisa", "Piggly"]);
+likes(["Deeksha", "Lorde", "Diana", "Spiderman", "Devon", "Lisa", "Piggly"]);
