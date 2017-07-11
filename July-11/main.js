@@ -12,10 +12,6 @@
 // likes ["Max", "John", "Mark"] // must be "Max, John and Mark like this"
 // likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 others
 // like this"
-console.log("hi");
-
-
-//
 function likes (array) {
   if (array.length === 0) {
     console.log("Sadly no one has liked this!");
@@ -23,18 +19,17 @@ function likes (array) {
     console.log(array + " likes this");
   } else if (array.length === 2) {
     var names = array.toString().split(",");
-    console.log(names[0] + " and " + names[1] + " likes this");
+    console.log(names[0] + " and " + names[1] + " like this");
   } else if (array.length === 3) {
     var people = array.toString().split(",");
     console.log(people[0] + ", " + people[1] + " and " + people[2] + " like this");
   } else {
     var likers = array.toString().split(",");
     var num = likers.length - 2;
-    console.log(likers[0] + ", " + likers[1] + " and " + num + " others");
+    console.log(likers[0] + ", " + likers[1] + " and " + num + " others like this");
   }
-  // console.log(array.toString() + " like this");
-  // console.log(array.length);
 }
+
 likes([]);
 likes(["Peter"]);
 likes(["James", "Casey"]);
