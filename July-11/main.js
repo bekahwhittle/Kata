@@ -18,12 +18,21 @@ console.log("hi");
 //   console.log("liked this");
 // }
 
-function likes(array) {
-  if (array == 0) {
-    console.log("no one liked this");
-  } else {
-    console.log(array + "liked this");
-  }
+// function likes(array) {
+//   if (array == 0) {
+//     console.log("no one liked this");
+//   } else {
+//     console.log(array + "liked this");
+//   }
+// }
+// likes(["John", "Patrick", "Bekah", "Jamal"]);
+// likes([]);
+//
+function likes (array) {
+  console.log(array.toString() + " liked this");
+  console.log(array.length);
 }
-likes(["John", "Patrick", "Bekah", "Jamal"]);
-likes([]);
+likes(["Peter"]);
+likes(["James", "Casey"]);
+likes(["Devon", "Lisa", "Piggly"]);
+likes(["Deeksha", "Lorde", "Diana", "Spiderman"]);
