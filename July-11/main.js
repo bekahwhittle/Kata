@@ -14,10 +14,16 @@
 // like this"
 console.log("hi");
 
-var friends = ["John", "Patrick", "Bekah", "Jamal"];
-if (friends => 1) {
-  console.log(friends + " liked this");
-}
 // while (friends.length => 1) {
 //   console.log("liked this");
 // }
+
+function likes(array) {
+  if (array == 0) {
+    console.log("no one liked this");
+  } else {
+    console.log(array + "liked this");
+  }
+}
+likes(["John", "Patrick", "Bekah", "Jamal"]);
+likes([]);
