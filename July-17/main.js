@@ -9,10 +9,25 @@ console.log("what's up?!");
 // isIsogram( "aba" ) == false
 // isIsogram( "moOse" ) == false // -- ignore letter case
 
-function isIsogram(str){
-  console.log(str.toUpperCase());
-  console.log(str.toString().split());
+function isIsogram(str) {
+  var letters = str.toUpperCase().split("");
+  var checkLetters = [];
+
+  letters.forEach(function(letter){
+    if (checkLetters.indexOf(letter) === -1) {
+      checkLetters.push(letter);
+      console.log(checkLetters);
+    }
+  })
+  if (checkLetters.length === letters.length) {
+    console.log("✅");
+  } else {
+    console.log("❌");;
+  }
 }
 
-isIsogram("hello");
+
+isIsogram("Dermatoglyphics");
+isIsogram("aba");
 isIsogram("moOse");
+isIsogram("hello");
