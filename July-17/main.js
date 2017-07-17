@@ -10,9 +10,8 @@ console.log("what's up?!");
 // isIsogram( "moOse" ) == false // -- ignore letter case
 
 function isIsogram(str){
-  console.log(str.toUpperCase())
-
-
+  console.log(str.toUpperCase());
+  console.log(str.toString().split());
 }
 
 isIsogram("hello");
