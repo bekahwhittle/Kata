@@ -15,15 +15,17 @@ function array_diff (arrA, arrB) {
 
   for (var i = 0; i < arrA.length; i++) {
     for (var i = 0; i < arrB.length; i++) {
-      if (arrA[i] === arrB[i]) {
-        console.log("YES");
-      }else {
-        console.log("NO");
+     if (arrC.indexOf(arrA[i]) === -1 ) {
+        arrC.push(arrA[i]);
+        console.log(arrC);
+        if (arrC.indexOf(arrB[i] === -1)) {
+          arrC.push(arrB[i]);
+          console.log(arrC);
+        }
       }
     }
   }
-
-  console.log("🍁🍁🍁🍁🍁🍁");
 }
+
 array_diff([1, 2, 3, 4, 5], [2, 4, 5, 6, 7]); // [1, 3, 7]
-array_diff([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]);
+// array_diff([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]);
