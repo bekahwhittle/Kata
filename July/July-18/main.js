@@ -10,14 +10,20 @@
 
 console.log("🦊");
 
-var arrA = [1, 2, 3, 4, 5]
-var arrB = [2, 4, 6, 5, 7]
-var arrC = []
+function array_diff (arrA, arrB) {
+  var arrC = []
 
-arrA.forEach(function(numberA){
-  console.log(numberA);
-})
-console.log("🍁🍁🍁🍁🍁🍁");
-arrB.forEach(function(numberB) {
-  console.log(numberB);
-})
+  for (var i = 0; i < arrA.length; i++) {
+    for (var i = 0; i < arrB.length; i++) {
+      if (arrA[i] === arrB[i]) {
+        console.log("YES");
+      }else {
+        console.log("NO");
+      }
+    }
+  }
+
+  console.log("🍁🍁🍁🍁🍁🍁");
+}
+array_diff([1, 2, 3, 4, 5], [2, 4, 5, 6, 7]); // [1, 3, 7]
+array_diff([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]);
