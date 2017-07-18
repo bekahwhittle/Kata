@@ -12,20 +12,20 @@ console.log("🦊");
 
 function array_diff (arrA, arrB) {
   var arrC = []
+  var arrD = []
 
   for (var i = 0; i < arrA.length; i++) {
-    for (var i = 0; i < arrB.length; i++) {
-     if (arrC.indexOf(arrA[i]) === -1 ) {
-        arrC.push(arrA[i]);
-        console.log(arrC);
-        if (arrC.indexOf(arrB[i] === -1)) {
-          arrC.push(arrB[i]);
-          console.log(arrC);
+    if (arrC.indexOf(arrA[i]) === -1 ) {
+       arrC.push(arrA[i]);
+       console.log("first", arrC);
+    for (var j = 0; j < arrC.length; j++) {
+      if (arrB.indexOf(arrC[j]) === -1) {
+        console.log("second", arrC[j], arrD);
         }
       }
     }
   }
 }
 
-array_diff([1, 2, 3, 4, 5], [2, 4, 5, 6, 7]); // [1, 3, 7]
+array_diff([1, 2, 3, 4, 5], [2, 4, 5, 6, 7]); // [1, 3, 7, 6]
 // array_diff([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]);
