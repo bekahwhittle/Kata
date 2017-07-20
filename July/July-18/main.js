@@ -12,7 +12,6 @@ console.log("🦊");
 
 function array_diff (arrA, arrB) {
   var arrC = []
-  var arrD = []
 
   for (var i = 0; i < arrA.length; i++) {
     if (arrC.indexOf(arrA[i]) === -1 ) {
@@ -20,7 +19,7 @@ function array_diff (arrA, arrB) {
        console.log("first", arrC);
     for (var j = 0; j < arrC.length; j++) {
       if (arrB.indexOf(arrC[j]) === -1) {
-        console.log("second", arrC[j], arrD);
+        console.log("second", arrC[j]);
         }
       }
     }
@@ -28,4 +27,3 @@ function array_diff (arrA, arrB) {
 }
 
 array_diff([1, 2, 3, 4, 5], [2, 4, 5, 6, 7]); // [1, 3, 7, 6]
-// array_diff([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]);
